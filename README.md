@@ -8,13 +8,13 @@ Faults in registers holding intermediate values (IREG, WREG, PSUM) and multiplie
 
 ## Getting started
 
-###Requirements###
+**Requirements**
 
 - Pytorch >= 2.3 (<= 2.8 for Brevitas)
 - Numpy
 - Brevitas == 0.12.1
 
-###Run experiments###
+**Run experiments**
 
 Clone this repo.
 ```
