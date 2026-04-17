@@ -40,4 +40,5 @@ if __name__ == '__main__':
     model = quantize(model, config, calib_loader, val_loader, my_device)
     
     # Run fault injection (set int_ops to False)
-    run_fault_injection(model, val_loader, my_device, sa_size=32, fault_num=10, int_ops=False) 
+    run_fault_injection(model, val_loader, my_device, sa_size=32, fault_num=10, dataflow='OS', 
+                        fault_type='permanent', quant=True, int_ops=False, stuck_at=1)

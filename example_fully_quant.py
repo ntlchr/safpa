@@ -94,4 +94,5 @@ if __name__ == '__main__':
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=1)
     
     # Run fault injection (set int_ops to True)
-    run_fault_injection(model, dataloader, my_device, sa_size=32, fault_num=10, int_ops=True)
+    run_fault_injection(model, dataloader, my_device, sa_size=32, fault_num=10, dataflow='OS', 
+                        fault_type='transient', quant=True, int_ops=True)
